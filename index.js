@@ -13,8 +13,15 @@ var userAgent = 'NodeJs/' + process.version + ' (' + os.platform() + ' ' + os.re
  * @return {ClientRequest} 
  */
 module.exports = function (filepath, host, apiKey, callback) {
+    var parts = host.split('//');
+        var protocol = "http:"
+        if(parts.length > 1){
+            protocol = parts[0];
+            host = parts[1].split('/')[0]; //make sure we chop of any slashes
+        }
     var options = {
         host: host,
+        protocol: protocol,
         path: '/api/v2/package/',
         method: 'PUT',
         headers: {
