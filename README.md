@@ -1,16 +1,16 @@
 # nuget-push
-> Natively in push nuget packages in nodejs.
+> Natively push nuget packages in nodejs.
 
 **This package does NOT need nuget cli, no dependency outside of node!**
 
 This package has been created for dev-ops purposes on dotnet core projects.
 
-You could use native `dotnet pack` to create your nuget packages,
+## Usecase
+You can run `dotnet pack` commands to create your nuget packages,
 and `nuget-push` to push them to the feed. 
 This way the nuget commandline tool is not needed. usefull for cross-os development
 
-
-## usage
+## Usage
 ```javascript
 var push = require('nuget-push');
 
