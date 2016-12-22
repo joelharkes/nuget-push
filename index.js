@@ -1,5 +1,9 @@
 var fs = require('fs');
+var os = require('os');
+
 var FormData = require('form-data');
+
+var userAgent = 'NodeJs/' + process.version + ' (' + os.platform() + ' ' + os.release() + ')'
 
 /**
  * @param {string} filepath fs path to nuget package.
@@ -15,7 +19,7 @@ module.exports = function (filepath, host, apiKey, callback) {
         method: 'PUT',
         headers: {
             'X-NuGet-ApiKey': apiKey,
-            'user-agent': 'NuGet Command Line/3.5.0 (Microsoft Windows NT 6.2.9200.0)',
+            'user-agent': userAgent,
             'Accept-Language': 'en-US'
         }
     };
