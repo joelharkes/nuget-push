@@ -1,6 +1,6 @@
 {
   "name": "nuget-push",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "push nuget packages to feed directly, no need for nuget cli.",
   "main": "index.js",
   "scripts": {
