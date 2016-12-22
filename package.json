@@ -1,0 +1,27 @@
+{
+  "name": "nuget-push",
+  "version": "1.0.0",
+  "description": "push nuget packages to feed directly, no need for nuget cli.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelharkes/nuget-push.git"
+  },
+  "keywords": [
+    "nuget",
+    "push",
+    "natively"
+  ],
+  "author": "joelharkes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joelharkes/nuget-push/issues"
+  },
+  "homepage": "https://github.com/joelharkes/nuget-push#readme",
+  "dependencies": {
+    "form-data": "^2.1.2"
+  }
+}
